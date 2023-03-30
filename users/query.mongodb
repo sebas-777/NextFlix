@@ -57,3 +57,35 @@ db.users.insertMany([
     }
 ]);
 
+use('nextflix');
+
+db.createCollection('movies');
+
+
+db.movies.insertMany([
+    {
+        "title":"Apuesta Maxima",
+        "genre":["drama","crime"],
+        "rating":"R",
+        "duration":120,
+        "cast":["Wagner Moura", "Pedro Pascal", "Boyd Holbrook"],
+        "description":"La historias de apostadores en las vegas"
+    },
+    {
+        "title":"La Casa de los Espejos",
+        "genre":["terror","suspence"],
+        "rating":"NC-17",
+        "duration":180,
+        "cast":["Arnoldo Suarez", "Roberto Quintero", "Sandra Bulock"],
+        "description":"Muerte, Cuchilladas etc."
+    },
+     {
+        "title":"Rapido y Furioso",
+        "genre":["action","speed"],
+        "rating":"PG-13",
+        "duration":200,
+        "cast":["Torreto Castro", "Vincen Estrada", "Stella Raiz"],
+        "description":"Carros Chimbas,Bala etc."
+    },
+
+]);
