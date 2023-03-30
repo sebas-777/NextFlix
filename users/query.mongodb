@@ -1,0 +1,59 @@
+const database = 'nextflix';
+
+
+// Create a new database.
+use(database);
+
+// Create in collection users.
+db.users.insertMany([
+    {
+        "user_id":123,
+        "name":"Juan Perez",
+        "email":"juan.perez@example.com",
+        "country":"colombia",
+        "payment_info":{
+            "card_number":"1234-5678-9012-3456",
+            "expiry_date":"01/23",
+            "cvv":"123"
+        },
+        "preferences":{
+            "language":"es",
+            "subtitle":"es",
+            "autoplay":true
+        }
+    },
+    { 
+        "user_id":456,
+        "name":"Maria ceballos",
+        "email":"maria.ceballos@example.com",
+        "country":"argentina",
+        "payment_info":{
+            "card_number":"3456-9012-5678-1234",
+            "expiry_date":"02/19",
+            "cvv":"150"
+        },
+        "preferences":{
+            "language":"eng",
+            "subtitle":"eng",
+            "autoplay":false
+        }
+
+    },
+    {
+         "user_id":789,
+        "name":"erika jimenez",
+        "email":"erika.jimenez@example.com",
+        "country":"mexico",
+        "payment_info":{
+            "card_number":"3557-0862-1328-5432",
+            "expiry_date":"03/23",
+            "cvv":"270"
+        },
+        "preferences":{
+            "language":"port",
+            "subtitle":"port",
+            "autoplay":true
+        }
+    }
+]);
+
